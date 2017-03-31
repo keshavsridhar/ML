@@ -110,7 +110,6 @@ if __name__ == "__main__":
         k = knn_model[i][0].predict(testX)
         fscore = f1_score(testy, k)
         print("k= {0}, f1_score= {1}".format(i + 1, fscore))
-        # Uncomment following lines to get accuracy and error rate.
         j = knn_model[i][0].score(testX, testy)
         print("Nearest-neighbor: {0}, Test set accuracy: {1}, Test set error rate: {2}"
               .format(i + 1, j, 1 - j))
