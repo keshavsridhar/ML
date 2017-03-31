@@ -36,7 +36,6 @@ if __name__ == "__main__":
         k = dtree_model[i][0].predict(testX)
         fscore = f1_score(testy, k)
         print("depth= {0}, f1_score= {1}".format(dtree_model[i][3], fscore))
-        # Uncomment the following lines to get accuracies and error rates.
         # j = dtree_model[i][0].score(testX, testy)
         # l = dtree_model[i][0].score(trainX, trainy)
         # print("Train set accuracy: {0}, Error rate: {1}, Max_depth: {2}".format(l, 1 - l, dtree_model[i][3]))
