@@ -63,7 +63,6 @@ if __name__ == "__main__":
         k = nb_model[i][0].predict(testX)
         fscore = f1_score(testy, k)
         print("f1_score= {0}".format(fscore))
-        # Uncomment the following lines to get accuracies and error rates.
         # j = nb_model[i][0].score(testX, testy)
         # l = nb_model[i][0].score(trainX, trainy)
         # print("Train set accuracy: {0}, Error rate: {1}".format(l, 1 - l))
