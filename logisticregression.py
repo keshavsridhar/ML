@@ -39,7 +39,6 @@ if __name__ == "__main__":
         k = logsreg_model[i][0].predict(testX)
         fscore = f1_score(testy, k)
         print("tol= {0}, f1_score= {1}".format(logsreg_model[i][1], fscore))
-        # Uncomment the following lines to get accuracies and error rates.
         # j = logsreg_model[i][0].score(testX, testy)
         # l = logsreg_model[i][0].score(trainX, trainy)
         # print("Tolerance level: {0}, Test set accuracy: {1}, Test set error: {2}"
